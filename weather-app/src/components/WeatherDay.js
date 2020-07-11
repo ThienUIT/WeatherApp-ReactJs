@@ -6,10 +6,10 @@ function WeatherDay( props) {
   return (
     <div className="justify-content-md-center">
         <Jumbotron style={{backgroundColor:"#60b6e1"}}>
-        <h5> {props.day}</h5>
+        <h5 xs="auto"> {props.day}</h5>
         <img src={img}></img>
-        <h5>Min : {props.mintemp}°C</h5>
-        <h5>Max : {props.maxtemp}°C</h5>
+        <h5 className="notBold">Min : {props.mintemp}°C</h5>
+        <h5 className="notBold">Max : {props.maxtemp}°C</h5>
     </Jumbotron>
     </div>
   );
